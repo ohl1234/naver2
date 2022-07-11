@@ -83,7 +83,9 @@ body{
 .sc-login .link-login .ic-naver,
 .sc-login .link-join::before,
 .sc-login .look-wrap::before,
-.sc-cardnews .navi .btn::after{
+.sc-cardnews .navi .btn::after,
+.btn-wrap .btn-mode::after,
+.btn-wrap .top::after{
     background-image: url(../images/sp-bg.png);
     background-repeat: no-repeat;
     background-size: 457px;

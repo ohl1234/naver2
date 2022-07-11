@@ -545,3 +545,38 @@
     font-weight: bold;
 }
 /* footer 끝 */
+
+/* btn-wrap 시작 */
+.btn-wrap{
+    position: fixed;
+    right: 24px;
+    bottom: 20px;
+}
+.btn-wrap .btn-mode{
+    padding: 0;
+}
+.btn-wrap .btn-mode::after{
+    content: '';
+    display: inline-block;
+    width: 136px;
+    height: 53px;
+    background-position: -270px -55px;
+    vertical-align: top;
+    cursor: pointer;
+    z-index: 100;
+}
+.btn-wrap .btn-mode:hover::after{
+    background-position: -270px -110px;
+}
+.btn-wrap .top::after{
+    content: '';
+    display: inline-block;
+    width: 51px;
+    height: 51px;
+    background-position: -150px -212px;
+    vertical-align: top;
+}
+.btn-wrap .top:hover::after{
+    background-position: -203px -212px;
+}
+/* btn-wrap 끝 */
