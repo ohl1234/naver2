@@ -356,7 +356,7 @@
 .footer .banner-wrap{
     overflow: hidden;
 }
-.footer .banner-wrap .thumb{
+.footer .banner-wrap .thumb-box{
     float: left;
     width: 160px;
     height: 86px;
