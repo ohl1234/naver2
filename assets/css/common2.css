@@ -1,0 +1,145 @@
+body{
+    /* min-width: 1190px; */
+    font-size: 12px;
+    line-height: 16px;
+    color: #202020;
+    font-family: -apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif;
+}
+
+.blind{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip: rect(0,0,0,0);
+    overflow: hidden;
+    margin: -1px;
+}
+
+/* img border & dim */
+.thumb-bd{
+    position: relative;
+    display: block;
+}
+.thumb-bd::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid rgba(0,0,0,.1);
+}
+.thumb-bd img{
+    width: 100%;
+    object-fit: cover;
+}
+.thumb-bd .dim{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: .1;
+    filter: alpha(opacity=10);
+    background-color: #000;
+}
+
+/* img hover effect */
+.thumb-box{
+    overflow: hidden;
+}
+.thumb-box img{
+    transition: transform .2s cubic-bezier(.165,.84,.44,1);-webkit-transform :.2s cubic-bezier(.165,.84,.44,1);
+}
+.thumb-box:hover img{
+    transform: scale(1.1);
+}
+
+/* img창고1 */
+.header .logo-box a::after,
+.header .search-wrap .btn-submit::after,
+.header .link-start::after,
+.header .link-junior::after,
+.header .link-bean::after,
+.header .gnb-list1 .ic-mail::before,
+.header .gnb-list1 .shop::before,
+.header .gnb-list1 .shoplive::before,
+.header .gnb-list1 .tv::before,
+.header .btn-more::after,
+.header .degree-box .max::before,
+.footer .link-sitemap::after,
+.sc-news .issue-area .link-media::after,
+.sc-news .link-title::before,
+.sc-news .link-title::after,
+.sc-news .link-set::after,
+.sc-themepost .list-area .btn-set::before,
+.sc-news .group-tile .btn::after,
+.sc-themepost .group-theme .btn::after,
+.sc-themepost .topstory-wrap .ic-play,
+.sc-themepost .media-wrap .ic-play,
+.sc-themepost .link-funding::after,
+.sc-themepost .funding-area .btn::after,
+.sc-themepost .btn-more::before,
+.sc-login .link-login .ic-naver,
+.sc-login .link-join::before,
+.sc-login .look-wrap::before,
+.sc-cardnews .navi .btn::after{
+    background-image: url(../images/sp-bg.png);
+    background-repeat: no-repeat;
+    background-size: 457px;
+}
+
+/* 쇼핑몰영역 img창고 */
+
+.sc-shop .group-title .title::before,
+.sc-shop .group-title .title::after,
+.sc-shop .control .btn-box .btn::after,
+.sc-shop .page .btn::after,
+.sc-shop .deal-title .title a::before,
+.sc-shop .deal-thumb .ic-oneplus,
+.sc-shop .deal-thumb .thumb + .thumb::before{
+    background-image: url(../images/sp-shop-bg.png);
+    background-repeat: no-repeat;
+    background-size: 107px;
+}
+
+/* 쇼핑몰영역 prev next 공통 */
+.sc-shop .control{
+    position: absolute;
+}
+.sc-shop .control .num-box{
+    float: left;
+    line-height: 29px;
+    color: grey;
+}
+.sc-shop .control .current-box{
+    margin-right: 4px;
+    color: #202020;
+    font-weight: 700;
+}
+.sc-shop .control .btn-box{
+    overflow: hidden;
+    float: left;
+    margin-left: 7px;
+}
+.sc-shop .control .btn-box .btn{
+    float: left;
+    background-color: #fff;
+    border: 1px solid #dae1e6;
+}
+.sc-shop .control .btn-box .btn::after{
+    content: '';
+    display: inline-block;
+    width: 5px;
+    height: 9px;
+    background-position: -93px -77px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    margin: 9px 12px 9px 10px;
+}
+.sc-shop .control .btn-box .btn.next::after{
+    background-position: -79px -77px;
+}
+.sc-shop .control .btn-box .btn.next{
+    margin-left: -1px;
+}
