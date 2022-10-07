@@ -290,11 +290,11 @@
     color: #000;
 }
 .sc-themepost .list-area .bar{
-        float: left;
-        width: 1px;
-        height: 10px;
-        margin: 3px 7px;
-        background-color: #ccc;
+    float: left;
+    width: 1px;
+    height: 10px;
+    margin: 3px 7px;
+    background-color: #ccc;
 }
 .sc-themepost .list-area .btn-set::before{
     content: '';
